@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+
+<body>
+    <header class=" h-screen bg-blue-600 fixed top-0 left-0">
+        <nav class=" w-full">
+            <li class=" p-3 border-b-2 border-gray-700"><a href="#home" class="capitalize"></a>Home</li>
+            <li class=" p-3 border-b-2 border-gray-700"><a href="#predict" class="capitalize"></a>Prediction</li>
+            <li class=" p-3 bg-gray-700 text-white "><a href="#analytics" class="capitalize"></a>Analysis</li>
+        </nav>
+    </header>
+    <main class=" ">
+        <div class=" h-screen w-full bg-blue-200 grid place-items-center " id="analytics">
+            <p class=" text-black underline text-3xl text-center">Result</p>
+            <div>
+                <div class=" flex gap-6 items-center">
+                    <label>legal/illegal promotion:</label>
+                    <div>
+                        <p class="py-3 w-52  border mt-1 rounded px-4 bg-blue-600 text-white outline-none">{{data['prom']}}</p>
+                    </div>
+                </div>
+                <div class=" flex gap-6 items-center">
+                    <label>Bonus:</label>
+                    <div>
+                        <p class="py-3 w-52  border mt-1 rounded px-4  bg-blue-600 text-white outline-none">{{data['bonus']}}</p>
+                    </div>
+                </div>
+                <div class=" flex gap-6 items-center">
+                    <label>Reason:</label>
+                    <div>
+                        <p class="py-3 w-max  border mt-1 rounded px-4 bg-blue-600 text-white outline-none">{{data['reason']}}</p>
+                    </div>
+                </div>
+                <div class=" flex gap-6 items-center">
+                    <label>Future Performance</label>
+                    <div>
+                        <p class="py-3 w-max  border mt-1 rounded px-4 bg-blue-600 text-white outline-none">{{data['perform']}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
