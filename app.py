@@ -92,9 +92,14 @@ def data():
         print(f'Awards Won: {awards_won}')
 
 
-        features = [labels['department'][department],labels['region'][region],
-                    labels['gender'][gender],no_of_trainings,age,prev_year_rating,length_of_service,awards_won,avg_training_score]
+        # features = [labels['department'][department],
+        #             labels['region'][region],
+        #             labels['gender'][gender],no_of_trainings,age,prev_year_rating,length_of_service,awards_won,avg_training_score]
         
+        features = [0,
+                    labels['region'][region],
+                    labels['gender'][gender],no_of_trainings,age,prev_year_rating,length_of_service,awards_won,avg_training_score]
+
         print('Features : ',features)
         y_pred = loaded_model.predict([features])[0]
         print("Prediction ",y_pred)
