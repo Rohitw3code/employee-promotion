@@ -10,20 +10,22 @@
 </head>
 
 <body>
-    <header class=" h-screen bg-green-600 fixed top-0 left-0">
+    <header class=" h-screen fixed top-0 left-0" style="background: #47c710;">
         <div class=" flex flex-col justify-between h-screen">
-            <nav class=" w-full">
-                <li class=" p-3 bg-green-800 text-white "><a href="#home" class="capitalize"></a>Home</li>
-                <li class=" p-3 border-b-2 border-gray-700"><a href="#predict" class="capitalize"></a>Prediction</li>
-                <li class=" p-3 border-b-2 border-gray-700"><a href="#analytics" class="capitalize"></a>Analysis</li>
+            <nav class=" w-full flex justify-between items-center flex-col h-3/4">
+                <li class=" w-full p-3 text-2xl text-white" style="background: rgba(0,0,0,0.5);">Dashboard</li>
+                <li class=" p-1 text-white w-max rounded font-bold text-white" style="border-bottom: 6px solid #fb383c;"><a href="#home" class="capitalize"></a>Home</li>
+                <li class=" p-1 w-max  font-bold text-white "><a href="#predict" class="capitalize"></a>Predic Emp</li>
+                <li class=" p-1 w-max  font-bold text-white "><a href="#analytics" class="capitalize"></a>Analysis</li>
             </nav>
             <div class="flex justify-center">
-                <button class=" bg-red-700 px-4 py-2 m-4 text-white rounded">Logout</button>
+                <button class=" font-bold bg-white text-red-400 px-8 py-2 m-4 rounded-full ">Logout</button>
             </div>
         </div>
     </header>
-    <main class=" ">
-        <div class=" hero--page h-screen w-full bg-blue-200 flex items-center text-white justify-center gap-3 p-2"
+    <main class=" relative">
+        <div class=" absolute  w-full flex justify-center font-light text-white p-3 text-3xl" style="background: rgba(0,0,0,0.5);">Prediction Employee</div>
+        <div class=" hero--page h-screen w-full flex items-center text-white justify-center gap-3 p-2" style="background: #fb383c;"
             id="home">
             <div class=" p-3 flex flex-col gap-5 text-black">
                 <div class=" flex flex-col ">

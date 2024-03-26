@@ -12,27 +12,28 @@
   </head>
 
   <body>
-    <header class=" h-screen bg-green-600 fixed top-0 left-0">
+    <header class=" h-screen fixed top-0 left-0" style="background: #47c710;">
       <div class=" flex flex-col justify-between h-screen">
-          <nav class=" w-full">
-              <li class=" p-3 border-b text-white "><a href="#home" class="capitalize"></a>Home</li>
-              <li class=" p-3  bg-green-800 border-gray-700"><a href="#predict" class="capitalize"></a>Prediction</li>
-              <li class=" p-3 border-b-2 border-gray-700"><a href="#analytics" class="capitalize"></a>Analysis</li>
+          <nav class=" w-full flex justify-between items-center flex-col h-3/4">
+            <li class=" w-full p-3 text-2xl text-white" style="background: rgba(0,0,0,0.5);">Dashboard</li>
+              <li class=" p-1 text-white w-max rounded font-bold text-white" ><a href="#home" class="capitalize"></a>Home</li>
+              <li class=" p-1 w-max  font-bold text-white " style="border-bottom: 6px solid #fb383c;"><a href="#predict" class="capitalize"></a>Predic Emp</li>
+              <li class=" p-1 w-max  font-bold text-white "><a href="#analytics" class="capitalize"></a>Analysis</li>
           </nav>
           <div class="flex justify-center">
-              <button class=" bg-red-700 px-4 py-2 m-4 text-white rounded">Back</button>
+              <button class=" font-bold bg-white text-red-400 px-8 py-2 m-4 rounded-full ">Back</button>
           </div>
       </div>
   </header>
     <main class=" ">
-      <div class="min-h-screen w-full bg-blue-500" id="predict">
-        <p class="text-3xl underline text-center text-black">Prediction Form</p>
+      <div class="min-h-screen w-full" style="background: #fb383c;" id="predict">
+        <div class=" w-full flex justify-center font-light text-white p-3 text-3xl" style="background: rgba(0,0,0,0.5);">Prediction Employee</div>
         <div class="p-5 mx-auto mt-6">
           <form class="p-5" method="post">
             <div class="grid gap-6 mb-6 md:grid-cols-2">
               <div>
                 <label
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-white dark:text-white"
                 >
                   Full Name</label
                 >
@@ -46,7 +47,7 @@
               </div>
               <div>
                 <label
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-white dark:text-white"
                   >Experience
                 </label>
                 <input
@@ -58,7 +59,7 @@
                 />
               </div>
               <div class="mb-6">
-                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Department</label>
+                <label class="block mb-2 text-sm font-medium text-white dark:text-white">Department</label>
                 <select name="department" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
                     <option value="" disabled selected>Select a department</option>
                     <option value="Sales & Marketing">Sales & Marketing</option>
@@ -74,7 +75,7 @@
             </div>            
               <div>
                 <label
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-white dark:text-white"
                   >Age
                 </label>
                 <input
@@ -88,39 +89,39 @@
               </div>
               <div class="flex gap-3">
                 <label
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-white dark:text-white"
                   >Education :
                 </label>
                 <div>
                   <input type="radio" name=" rad-exp" />
-                  <label>High school</label>
+                  <label class="text-white">High school</label>
                 </div>
                 <div>
                   <input type="radio" name=" rad-exp" />
-                  <label>Batch</label>
+                  <label class="text-white">Batch</label>
                 </div>
                 <div>
                   <input type="radio" name=" rad-exp" />
-                  <label>Master</label>
+                  <label class="text-white">Master</label>
                 </div>
               </div>
               <div class="flex gap-3">
                 <label
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-white dark:text-white"
                   >Gender :
                 </label>
                 <div>
-                  <input type="radio" name="rad-gender" />
-                  <label>Male</label>
+                  <input type="radio" class=" caret-green-600" name="rad-gender" style="caret-color: #16a34a;" />
+                  <label class="text-white">Male</label>
                 </div>
                 <div>
                   <input type="radio" name="rad-gender" />
-                  <label>Female</label>
+                  <label class="text-white">Female</label>
                 </div>
               </div>
               <div>
                 <label
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-white dark:text-white"
                   >Number of trainings
                 </label>
                 <input
@@ -133,7 +134,7 @@
               </div>
               <div>
                 <label
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-white dark:text-white"
                   >Previous Year Rating
                 </label>
                 <input
@@ -147,7 +148,7 @@
             </div>
             <div class="mb-6">
               <label
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                class="block mb-2 text-sm font-medium text-white dark:text-white"
                 >Length of service address</label
               >
               <input
@@ -160,7 +161,7 @@
             </div>
             <div class="mb-6">
               <label
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                class="block mb-2 text-sm font-medium text-white dark:text-white"
                 >Average Training Score</label
               >
               <input
@@ -172,7 +173,7 @@
               />
             </div>
             <div class="mb-6">
-              <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Region</label>
+              <label class="block mb-2 text-sm font-medium text-white dark:text-white">Region</label>
               <select name="region" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
                   <option value="" disabled selected>Select a region</option>
                   <option value="region_7">Region 7</option>
@@ -213,38 +214,40 @@
           </div>
                       <div class="flex justify-between">
               <div class="flex gap-8">
-                <label>kpls > 80 </label>
+                <label class=" text-white">kpls > 80 </label>
                 <div>
                   <input type="radio" name="rad-kp" />
-                  <label>Yes</label>
+                  <label class=" text-white">Yes</label>
                 </div>
                 <div>
                   <input type="radio" name="rad-kp" />
-                  <label>No</label>
+                  <label class=" text-white">No</label>
                 </div>
               </div>
               <div class="flex gap-8">
-                <label>Awards won </label>
+                <label class=" text-white">Awards won </label>
                 <div>
                   <input type="radio" name="rad-award" />
-                  <label>Yes</label>
+                  <label class=" text-white">Yes</label>
                 </div>
                 <div>
                   <input type="radio" name="rad-award" />
-                  <label>No</label>
+                  <label class=" text-white">No</label>
                 </div>
               </div>
             </div>
+            <div class=" flex justify-center gap-20">
             <input
               type="submit"
               value="submit"
-              class="text-white mt-6 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="text-white mt-6 bg-black  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-md w-full sm:w-auto px-5 py-2 leading-tight text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             />
             <input
               type="reset"
               value="clear"
-              class="text-white mt-6 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="text-white mt-6 bg-black  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-md w-full sm:w-auto px-5 py-2 leading-tight text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             />
+            </div>
           </form>
         </div>
       </div>
